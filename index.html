@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Средняя школа №5 города Сморгони</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Средняя школа №5 города Сморгони</h1>
+    <p>Образование, которое меняет будущее</p>
+</header>
+
+<nav>
+    <ul>
+        <li class="tab-link active" onclick="switchTab('about')">О нас</li>
+        <li class="tab-link" onclick="switchTab('programs')">Программы обучения</li>
+        <li class="tab-link" onclick="switchTab('news')">Новости</li>
+        <li class="tab-link" onclick="switchTab('events')">События</li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section id="about" class="tab-content active">
+        <h2>О нас</h2>
+        <div class="about-text">
+            <p>Средняя школа №5 города Сморгони — это место, где создаются условия для всестороннего развития учащихся. Мы гордимся нашими педагогами и успехами учеников. Здесь каждый день воплощаются идеи, которые помогают развивать личности и готовят их к будущей жизни.</p>
+            <p>Предлагаем широкий спектр образовательных программ, от базового образования до углубленного изучения предметов. У нас каждый ученик может найти свою нишу и реализовать творческий потенциал.</p>
+        </div>
+    </section>
+
+    <section id="programs" class="tab-content">
+        <h2>Программы обучения</h2>
+
+        <div class="program-buttons">
+            <button class="program-btn" onclick="showProgramInfo('general-education')">Общее среднее образование</button>
+            <button class="program-btn" onclick="showProgramInfo('additional-programs')">Дополнительные программы</button>
+            <button class="program-btn" onclick="showProgramInfo('sports')">Спортивные секции</button>
+        </div>
+
+        <div id="general-education" class="program-info">
+            <h3>Общее среднее образование</h3>
+            <p>У нас качественное образование по всем основным предметам. Мы активно участвуем в олимпиадах, конкурсах и научных проектах, чтобы развивать у учащихся не только знания, но и умение мыслить критически.</p>
+        </div>
+
+        <div id="additional-programs" class="program-info">
+            <h3>Дополнительные программы</h3>
+            <p>Предлагаем курсы по углубленному изучению иностранных языков, математики и информатики. Наши программы ориентированы на современные требования образования.</p>
+        </div>
+
+        <div id="sports" class="program-info">
+            <h3>Спортивные секции</h3>
+            <p>В школе есть секции по футболу, баскетболу, волейболу и другим видам спорта. Спортивные кружки способствуют развитию физической формы и командного духа.</p>
+        </div>
+
+    </section>
+
+    <section id="news" class="tab-content">
+        <h2>Новости</h2>
+        <div class="news-item">
+            <h3>Подготовка к новому учебному году</h3>
+            <p>1 сентября 2025 года состоится торжественная линейка, посвященная началу учебного года. Ожидаем встречи с педагогами и яркие мероприятия для учеников и их родителей.</p>
+            <span class="news-date">Дата: 30 августа 2025</span>
+        </div>
+
+        <div class="news-item">
+            <h3>Школьная олимпиада по математике</h3>
+            <p>В этом году пройдет олимпиада по математике среди учеников 7-11 классов. Победители смогут участвовать в более крупных конкурсах.</p>
+            <span class="news-date">Дата: 15 сентября 2025</span>
+        </div>
+
+        <div class="news-item">
+            <h3>Культурный вечер "Таланты Сморгони"</h3>
+            <p>22 октября 2025 года мы проводим культурный вечер, где ученики продемонстрируют свои творческие способности через пение, танцы и театральные номера.</p>
+            <span class="news-date">Дата: 22 октября 2025</span>
+        </div>
+
+        <div class="news-item">
+            <h3>Конкурс научных проектов</h3>
+            <p>В ноябре 2025 года пройдет конкурс научных проектов среди старшеклассников. Мы ждем работы по экологии, робототехнике и другим направлениям науки.</p>
+            <span class="news-date">Дата: 10 ноября 2025</span>
+        </div>
+    </section>
+
+    <section id="events" class="tab-content">
+        <h2>События</h2>
+        
+        <div class="event-item">
+            <div class="event-info">
+                <h3>Учебные конкурсы для учащихся</h3>
+                <p>Каждый год проводим конкурсы для развития творческих и интеллектуальных способностей учеников. Конкурсы охватывают разные дисциплины: математика, литература, искусство.</p>
+                <p class="event-date">Дата: 15 марта 2025</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-info">
+                <h3>Городские олимпиады</h3>
+                <p>Школа участвует в городских олимпиадах. Победители получают дипломы и шанс участвовать в областных и республиканских этапах.</p>
+                <p class="event-date">Дата: 25 апреля 2025</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-info">
+                <h3>Концерты и культурные мероприятия</h3>
+                <p>Мы регулярно проводим концерты и театральные постановки, где ученики могут раскрыть свои таланты и поделиться ими с другими.</p>
+                <p class="event-date">Дата: 5 июня 2025</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-info">
+                <h3>Спортивные игры и турниры</h3>
+                <p>Ежегодно проводим спортивные турниры по футболу, баскетболу и волейболу. Это отличная возможность для учеников развить командный дух и поддерживать физическую форму.</p>
+                <p class="event-date">Дата: 10 сентября 2025</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Средняя школа №5 города Сморгони. Все права защищены.</p>
+    <p>Адрес: 231045 Гродненская область, г. Сморгонь, ул. Синицкого, 9</p>
+    <p>Телефон: 8(01592) 2-87-65 (Приёмная, факс)</p>
+    <p>Email: sch5@smorgon-edu.gov.by</p>
+</footer>
+
+<script>
+    function showProgramInfo(programId) {
+        document.querySelectorAll('.program-info').forEach(function(info) {
+            info.classList.remove('active');
+        });
+        const programInfo = document.getElementById(programId);
+        programInfo.classList.add('active');
+    }
+
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-link').forEach(function(tab) {
+            tab.classList.remove('active');
+        });
+        document.querySelector('.tab-link[onclick="switchTab(\'' + tabId + '\')"]').classList.add('active');
+        document.querySelectorAll('.tab-content').forEach(function(content) {
+            content.classList.remove('active');
+        });
+        const activeTab = document.getElementById(tabId);
+        activeTab.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
